@@ -4,8 +4,6 @@ import moment         from 'moment';
 import {
   enterHome,
   leaveHome,
-  enterAbout,
-  leaveAbout,
   enterComponents,
   leaveComponents
 }                       from '../../../src/app/redux/modules/views';
@@ -38,27 +36,6 @@ describe('redux - action creator "views"', () => {
     expect(leaveHome(now)).to.deep.equal(leaveHomeACTION);
   });
 
-
-  it('should return enterAbout action object', () => {
-    const enterAboutACTION = {
-      type:         'ENTER_ABOUT_VIEW',
-      currentView:  'about',
-      enterTime:    now,
-      leaveTime:    null
-    };
-    expect(enterAbout(now)).to.deep.equal(enterAboutACTION);
-  });
-
-  it('should return leaveAbout action object', () => {
-    const leaveAboutACTION = {
-      type:         'LEAVE_ABOUT_VIEW',
-      currentView:  'about',
-      enterTime:    null,
-      leaveTime:    now
-    };
-    expect(leaveAbout(now)).to.deep.equal(leaveAboutACTION);
-  });
-
   it('should return enterComponents action object', () => {
     const enterComponentsACTION = {
       type:         'ENTER_COMPONENTS_VIEW',
@@ -69,7 +46,7 @@ describe('redux - action creator "views"', () => {
     expect(enterComponents(now)).to.deep.equal(enterComponentsACTION);
   });
 
-  it('should return leaveAbout action object', () => {
+  it('should return leaveComponents action object', () => {
     const leaveComponentsACTION = {
       type:         'LEAVE_COMPONENTS_VIEW',
       currentView:  'components',

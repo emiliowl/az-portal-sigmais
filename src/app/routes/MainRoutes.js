@@ -6,7 +6,9 @@ import {
   Switch
  }                      from 'react-router';
 import Home             from '../views/home';
-import About            from '../views/about';
+import Voucher          from '../views/voucher';
+import RegisterPatient  from '../views/register_patient';
+import RegisterPos      from '../views/register_pos';
 import PrivateRoute     from '../components/privateRoute/PrivateRoute';
 import Protected        from '../views/protected';
 
@@ -14,7 +16,9 @@ const MainRoutes = () => {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
+      <Route path="/voucher" component={Voucher} />
+      <Route path="/register_patient" component={RegisterPatient} />
+      <Route path="/register_pos" component={RegisterPos} />
       {/* private views: need user to be authenticated */}
       <PrivateRoute path="/protected" component={Protected} />
     </Switch>

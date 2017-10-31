@@ -9,15 +9,27 @@
       "isRouteBtn": true
     },
     {
-      "label":      "Protected",
-      "link":       "/protected",
-      "view":       "protected",
+      "label":      "Consulta Voucher",
+      "link":       "/voucher",
+      "view":       "voucher",
       "isRouteBtn": true
     },
     {
-      "label":      "About",
-      "link":       "/about",
-      "view":       "about",
+      "label":      "Cadastre-se",
+      "link":       "/register_patient",
+      "view":       "register_patient",
+      "isRouteBtn": true
+    },
+    {
+      "label":      "Ponto de Venda",
+      "link":       "/register_pos",
+      "view":       "register_pos",
+      "isRouteBtn": true
+    },
+    {
+      "label":      "Área logada",
+      "link":       "/protected",
+      "view":       "protected",
       "isRouteBtn": true
     },
     {

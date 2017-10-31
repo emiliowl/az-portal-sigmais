@@ -11,12 +11,10 @@ const chalk         = require('chalk');
 const app       = express();
 const compiler  = webpack(config);
 
-
 app.use(devMiddleware(compiler, {
   publicPath: config.output.publicPath,
   historyApiFallback: true
 }));
-
 app.use(hotMiddleware(compiler));
 
 app.get('*', (req, res) => {
